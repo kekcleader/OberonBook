@@ -1,13 +1,14 @@
 \documentclass[b5paper, 11pt, twoside, onecolumn, openany]{memoir}
 
 %%% PACKAGES 
-%%%------------------------------------------------------------------------
 
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\usepackage[T2A]{fontenc}
 \usepackage[russian]{babel}
 \usepackage[final]{microtype} % Less badboxes
 \usepackage{bookmark}
+\usepackage{listings}
+\usepackage{soulutf8}
 
 % \usepackage{kpfonts} %Font
 
@@ -16,15 +17,36 @@
 % \usepackage{tikz} % Figures
 \usepackage{graphicx} % Include figures
 
+%%% CODE LISTINGS
+\lstset{
+  language=Oberon-2,
+  extendedchars=\true,
+  basicstyle=\ttfamily\footnotesize,
+  commentstyle=\color{red},
+  escapeinside={\%*}{*\%},
+  frame=bottomline,
+  numbers=left,
+  stepnumber=1,
+  tabsize=2,
+  showstringspaces=false,
+  keepspaces=true,
+  breaklines=true,
+  breakatwhitespace=false,
+  columns=fullflexible
+}
+\lstdefinestyle{Oberon-2}{
+  keywordstyle=\color{red},
+  commentstyle=\itshape\color{purple!40!black}
+}
+\newcommand{\kod}{\lstinline}
+
 %%% PAGE LAYOUT 
-%%%------------------------------------------------------------------------
 
 \setlrmarginsandblock{0.15\paperwidth}{*}{1} % Left and right margin
 \setulmarginsandblock{0.2\paperwidth}{*}{1}  % Upper and lower margin
 \checkandfixthelayout
 
 %%% SECTIONAL DIVISIONS
-%%%------------------------------------------------------------------------
 
 \maxsecnumdepth{section} % Subsections (and higher) are numbered
 \setsecnumdepth{section}
@@ -185,10 +207,7 @@
 
 \clearpage
 
-\part{Введение в устройство компилятора}
-\chapter{Простейший лексический анализатор}
-
-\input{100_simple_lexer.tex}
+\input{text.tex}
 
 \backmatter
 
