@@ -1,3 +1,5 @@
+[Читать текущую версия книги «Построение компиляторов»](https://github.com/kekcleader/OberonBook/blob/master/oberon.pdf)
+
 # Построение компиляторов
 * Подготовка издания книги
 * Сайт: [freeoberon.su](https://freeoberon.su)
