@@ -17,30 +17,11 @@
 % \usepackage{tikz} % Figures
 \usepackage{graphicx} % Include figures
 
-%%% CODE LISTINGS
-\lstset{
-  language=Oberon-2,
-  extendedchars=\true,
-  basicstyle=\ttfamily\footnotesize,
-  commentstyle=\color{red},
-  escapeinside={\%*}{*\%},
-  frame=bottomline,
-  numbers=left,
-  stepnumber=1,
-  tabsize=2,
-  showstringspaces=false,
-  keepspaces=true,
-  breaklines=true,
-  breakatwhitespace=false,
-  columns=fullflexible
-}
-\lstdefinestyle{Oberon-2}{
-  keywordstyle=\color{red},
-  commentstyle=\itshape\color{purple!40!black}
-}
-\newcommand{\kod}{\lstinline}
 
-%%% PAGE LAYOUT 
+%%% CODE LISTINGS
+\input{codesettings.tex}
+
+%%% PAGE LAYOUT
 
 \setlrmarginsandblock{0.15\paperwidth}{*}{1} % Left and right margin
 \setulmarginsandblock{0.2\paperwidth}{*}{1}  % Upper and lower margin
@@ -187,11 +168,12 @@
 \mainmatter
 
 \begin{center}
-  {А. И. Ефимов} \\
-  {П. В. Александрян} \\
-  {Д. В. Высоцкий} \\
-  {В. И. Лукьянович} \\
-  {Д. И. Воронович} \\
+  ~ \\ ~ \\ ~ \\ ~ \\ ~ \\
+  %{А. И. Ефимов} \\
+  %{П. В. Александрян} \\
+  %{Д. В. Высоцкий} \\
+  %{В. И. Лукьянович} \\
+  %{Д. И. Воронович} \\
   \vspace{120pt}
   \textbf{\Huge ПОСТРОЕНИЕ} \\
   ~ \\

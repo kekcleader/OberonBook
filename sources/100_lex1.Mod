@@ -9,14 +9,14 @@ CONST (* Допустимые лексемы *)
   lbrace = 28; rbrace = 29; int = 30; string = 31; not = 32;
   and = 33; or = 34; plus = 35; minus = 36; rdiv = 37; div = 38;
   mod = 39; times = 40; eot = 64;
-VAR f: Files.File; 
+VAR f: Files.File;
     r: Files.Rider;
     ch: CHAR;
     sym: INTEGER;
     id: ARRAY 32 OF CHAR;
     idlen: INTEGER;
     ival: INTEGER;
-    
+
 PROCEDURE ReadCh;
 BEGIN
   IF r.eof THEN ch := 0X
