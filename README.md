@@ -14,11 +14,13 @@
 ```
 apt-get install -y texlive-full
 ```
+Также необходимо распаковать архив [pscyr.zip](http://blog.harrix.org/article/444) в домашний каталог.
+
 После чего преобразовать исходный текст в книгу в формате PDF можно так:
 ```
 pdflatex oberon.tex
 ```
-или с помощью команды `make`
+или с помощью команды `make`.
 
 Для ОС Виндоус существует [программа TeXworks](https://github.com/TeXworks/texworks/releases),
 для работы которой необхоим также пакет [MiKTeX](http://www.miktex.org).
