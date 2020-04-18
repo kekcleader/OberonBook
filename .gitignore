@@ -3,3 +3,5 @@
 *.toc
 *.swp
 *.bak
+*.dvi
+*.out.ps
